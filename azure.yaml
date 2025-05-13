@@ -1,0 +1,16 @@
+# azure.yaml
+
+version: 0.2
+
+app:
+  name: my-static-web-app
+  location: eastus
+  resourceGroup: myResourceGroup
+  sku: Free
+  properties:
+    build:
+      appLocation: "/src"
+      apiLocation: ""
+      outputLocation: "/dist"
+    deployment:
+      source: "https://github.com/yourusername/your-repo"
